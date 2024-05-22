@@ -81,6 +81,9 @@
                         {% endif %}
                         <div class="card-body">
                             <h5><a href="{{item.link}}" class="text-dark">{{item.title}}</a></h5>
+                            {% if item.description %}
+                                <p><strong>Descripcio:</strong> {{item.description}}</p>
+                            {% endif %}
                             {% if item.author %}
                                 <p><strong>Autor:</strong> {{item.author}}</p>
                             {% endif %}
@@ -90,7 +93,9 @@
                             {% if item.category %}
                                 <p><strong>Categoria:</strong> {{item.category}}</p>
                             {% endif %}
-                            <p>{{item.description}}</p>
+                            {% if item.modified %}
+                                <p><strong>Ultima actualitzacio:</strong> {{item.modified}}</p>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
