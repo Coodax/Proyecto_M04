@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template, redirect, url_for, flash
 from flask import request
-import feedparser
+import feedparser 
 
 app = Flask(__name__)
 app.secret_key = '¡3248 97320983 bkjxdlrkfj k2 r9p874989387 98p78oiyylkhçç'
@@ -85,10 +85,10 @@ def lavanguardia(seccio):
 
 def get_rss_lavanguardia(seccio):
     # MODE REMOT: versió on descarrega l'XML de la web
-    # xml = f"https://www.lavanguardia.com/rss/{seccio}.xml"
+    xml = f"https://www.lavanguardia.com/rss/{seccio}.xml"
     
     # MODE LOCAL: versió que fa servir l'XML descarregat
-    xml = f"./rss/lavanguardia/{seccio}.xml"
+    # xml = f"./rss/lavanguardia/{seccio}.xml"
     
     rss = feedparser.parse(xml)
-    return rss
+    return rss 

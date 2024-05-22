@@ -1,28 +1,44 @@
-# Exemple de README
+# README.md
 
-Això és un [enllaç](https://google.com) i això són **negretes** i *cursiva* i ara ve una llista:
+## Despliegue de la Aplicación 
 
-* hola
-* que
-* tal
+Breve guía:
+La aplicación usa Flask y puede funcionar en dos modos: modo local (utilizando un archivo XML descargado) y modo remoto (obtenido directamente de la web de La Vanguardia).
 
-Potser vols una llista numerada:
+## Requisitos Previos
 
-1. tot
-2. bé
-3. gràcies
+Como requisito previo es importante tener Python instalado en el sistema.
 
-## Un títol de nivell 2
+## Configuración del Entorno Virtual
 
-I un troç de codi
+    1. Clonar o descargar el repositorio en el sistema.
+    2. Navegar a la carpeta del proyecto.
+        - cd nombre_carpeta_proyecto
+    3. Crear un entorno virtual para nuestro proyecto. En mi caso por la version que tengo de Python tengo que utilizar 'venv'.
+        - python -m .venv venv
+    4. Activar el entorno virtual.
+        - En mi caso al tener Windows usare el siguiente comando: venv\Scripts\activate
 
-    apt-get install virus
+## Instalación de Dependencias
 
-O aixó també és un troç de codi:
+Una vez activado el entorno virtual se instalarán las dependencias:
+    - pip install -r requirements.txt
 
-```python
-a = 2 + 3
-```
-També pots integrar-ho `a=2` al paràgraf.
+## Inicio de la Aplicació
 
----
+Para iniciar la aplicación hay que hacerlo con el siguiente comando:
+    - python app.py
+Después de hacer el comando (en teoría) se puede ver la aplicación en el navegador web escribiendo 'http://localhost:5000'
+
+## Modo de uso
+
+Como he dicho al principio hay dos modos de uso:
+
+* Modo Local:
+    - Aquí, en este modo, carga el archivo XML desde la máquina local.
+* Modo Remoto:
+    - En este modo, se obtiene el archivo directamente desde la web de La Vanguardia (es necesario tener conexión a internet).
+
+ ## Recursos Adicionales
+    * Documentación de Flask:[Documentación de Flask](https://flask-es.readthedocs.io/).
+    * ¿Qué son los entornos virtuales?: Entornos Virtuales en Python [Entornos Virtuales en Python](https://docs.python.org/es/3/tutorial/venv.html).
