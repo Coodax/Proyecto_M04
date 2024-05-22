@@ -41,4 +41,4 @@ Como he dicho al principio hay dos modos de uso:
 
  ## Recursos Adicionales
 Documentación de Flask:[Documentación de Flask](https://flask-es.readthedocs.io/).
-¿Qué son los entornos virtuales?: Entornos Virtuales en Python [Entornos Virtuales en Python](https://docs.python.org/es/3/tutorial/venv.html).
+¿Qué son los entornos virtuales?:[Entornos Virtuales en Python](https://docs.python.org/es/3/tutorial/venv.html).
